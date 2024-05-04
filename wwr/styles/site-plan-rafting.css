@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #85ffc8;
     --secondary-color: #85c752;
@@ -19,6 +13,12 @@ body {
     --nav-link-color: #1bf3dd;
     --nav-hover-link-color: #535252;
     --nav-hover-background-color: #999999;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
