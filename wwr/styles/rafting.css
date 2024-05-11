@@ -56,11 +56,11 @@ h1 {
 
 article {
     position: absolute;
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
+    opacity: 0.6;
     bottom: 50px;
 	left: 20px;
     padding: 8px;
-    opacity: 0.8;
 }
 
 article p {
