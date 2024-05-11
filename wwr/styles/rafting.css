@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #85ffc8;
+    --secondary-color: #85c752;
+    --accent1-color: #636363;
+    --accent2-color: #4c4c4c;
+
+    --heading-font: 'shadows into light', serif;
+    --paragraph-font: arial, serif;
+
+    --nav-backround-color: #546c90;
+    --nav-link-color: #1bf3dd;
+    --nav-hover-link-color: #535252;
+    --nav-hover-background-color: #999999;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+div {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    position: absolute;
+    top: 21px;
+	left: 375px;
+}
+
+article {
+    position: absolute;
+    background-color: var(--accent2-color);
+    bottom: 50px;
+	left: 20px;
+    padding: 8px;
+    opacity: 0.8;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    width: 150px;
+    height: auto;
+    float: right;
+    padding: 5px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
