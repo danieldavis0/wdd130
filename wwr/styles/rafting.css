@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: #85ffc8;
-    --secondary-color: #85c752;
+    --secondary-color: white;
     --accent1-color: #636363;
     --accent2-color: #4c4c4c;
 
@@ -16,20 +16,25 @@
     --paragraph-font: arial, serif;
 
     --nav-backround-color: #546c90;
-    --nav-link-color: #1bf3dd;
+    --nav-link-color: #8ffff4;
     --nav-hover-link-color: #535252;
     --nav-hover-background-color: #999999;
 }
 
 body {
     font-family: var(--paragraph-font);
+    color: var(--secondary-color);
     max-width: 960px;
+    margin: auto;
     padding: 20px;
+    background-color: var(--accent1-color);
 }
 
 h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+    margin: 20px;
 }
 
 .sociallinks a {
@@ -49,6 +54,9 @@ div {
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    background-color: var(--accent2-color);
+    opacity: 0.8;
+    padding: 8px;
     position: absolute;
     top: 21px;
 	left: 375px;
@@ -56,8 +64,8 @@ h1 {
 
 article {
     position: absolute;
-    background-color: var(--primary-color);
-    opacity: 0.6;
+    background-color: var(--accent2-color);
+    opacity: 0.8;
     bottom: 50px;
 	left: 20px;
     padding: 8px;
@@ -77,4 +85,82 @@ article img {
 footer img {
     width: 50px;
     height: auto;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    max-width: 960px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+}
+
+footer p {
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: var(--nav-link-color);
+    background-color: var(--nav-backround-color);
+    text-align: center;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--nav-hover-link-color);
+    background-color: var(--secondary-color);
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+figure img {
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+    margin: auto;
+    max-width: 220px;
+    max-height: 150px;
+}
+
+.raftingimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
