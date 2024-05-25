@@ -199,6 +199,7 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    color: var(--primary-color);
 }
 
 legend {
@@ -240,7 +241,8 @@ input[type="checkbox"] {
 .radio-header {
     text-align: center;
     padding-right: 1rem;
-    color: white;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
 }
 
 .radio-option {
@@ -249,4 +251,14 @@ input[type="checkbox"] {
 
 .wireframe {
     color: var(--nav-link-color);
+}
+
+button {
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+button:hover {
+    color: var(--nav-hover-link-color);
+    background-color: white;
 }
