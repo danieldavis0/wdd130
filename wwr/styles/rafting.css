@@ -30,7 +30,7 @@ body {
     background-color: var(--accent1-color);
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
@@ -51,7 +51,7 @@ div {
     height: auto;
 }
 
-h1 {
+.heading {
     font-family: var(--heading-font);
     color: var(--primary-color);
     background-color: var(--accent2-color);
@@ -163,4 +163,90 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.happyemployees {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    width: 670px;
+    margin: 15px auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: darkslategray;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3em;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column {
+    grid-template-rows: 1fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column label {
+    text-align: center;
+}
+
+.radio-header {
+    text-align: center;
+    padding-right: 1rem;
+    color: white;
+}
+
+.radio-option {
+    text-align: center;
+}
+
+.wireframe {
+    color: var(--nav-link-color);
 }
