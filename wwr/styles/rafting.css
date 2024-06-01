@@ -256,6 +256,7 @@ input[type="checkbox"] {
 button {
     color: var(--primary-color);
     background-color: var(--accent2-color);
+    font: var(--paragraph-font);
 }
 
 button:hover {
@@ -271,7 +272,7 @@ button:hover {
 	left: 275px;
     height: 55px;
     width: 400px;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     font-size: x-large;
 }
 
@@ -297,6 +298,7 @@ figure p {
 .caption {
     width: 200px;
     text-align: center;
+    padding: 10px 0 0 0;
 }
 
 table {
@@ -343,7 +345,7 @@ caption {
     padding: 8px;
     height: 55px;
     width: 400px;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     font-size: x-large;
 
 }
@@ -351,12 +353,31 @@ caption {
 .trip-calltoaction {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
 }
 
 .trips-container {
     align-content: center;
-    padding: 10px;
-    margin: 0 auto;
+    background-color: darkslategray;
+    width: 670px;
+    margin: 15px auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.home-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
+    grid-gap: 1px;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-page p {
+    width: 400px;
+}
+
+.margin {
+    margin: 5px;
 }
